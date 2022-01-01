@@ -181,6 +181,8 @@ for _th in thread_pool:
     sleep(0.04)
 for _th in thread_pool:
     _th.join()
+
+    
 stock_list_df.to_csv('./data/stock_result_thread.csv')
 print(stock_list_df.head())
 
